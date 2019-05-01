@@ -1,0 +1,25 @@
+{
+  "name": "@davidbwaters/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config with preferred rules and tweaks.",
+  "main": "default.mjs",
+  "repository": "http://github.com/davidbwaters/eslint-config",
+  "author": "David B. Waters",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "eslint-config",
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "style checker",
+    "style linter"
+  ],
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}

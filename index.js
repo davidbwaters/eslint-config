@@ -2,6 +2,6 @@
  *  Default ESLint Config
  */
 
-export default {
+module.exports = {
   extends: './configs/modern.mjs'
 }

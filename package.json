@@ -2,7 +2,7 @@
   "name": "@davidbwaters/eslint-config",
   "version": "1.0.0",
   "description": "ESLint config with preferred rules and tweaks.",
-  "main": "default.mjs",
+  "main": "index.js",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
   "license": "MIT",

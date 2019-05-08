@@ -3,8 +3,8 @@
  *  and Node.js.
  */
 
-export default {
-  extends: './ecmascript-6.mjs',
+module.exports = {
+  extends: './ecmascript-6.js',
   env: {
     browser: true,
     node: true

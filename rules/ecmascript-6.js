@@ -3,7 +3,7 @@
  *  with ES6.
  */
 
-export default recommended = {
+module.exports = {
 
   'rules': {
 

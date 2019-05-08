@@ -4,7 +4,7 @@
  *  http://eslint.org/docs/rules/#possible-errors
  */
 
-export default {
+module.exports = {
 
   "rules": {
 
@@ -12,7 +12,7 @@ export default {
     // in the right direction
     "for-direction": "error",
 
-    // Enforces that a return statement is present in 
+    // Enforces that a return statement is present in
     // property getters
     "getter-return": "error",
 
@@ -46,14 +46,14 @@ export default {
     // Disallow empty statements
     "no-empty": "error",
 
-    // Disallow the use of empty character classes in 
+    // Disallow the use of empty character classes in
     // regular expressions
     "no-empty-character-class": "error",
 
     // Disallow assigning to the exception in a catch block
     "no-ex-assign": "error",
 
-    // Disallow double-negation boolean casts in a boolean 
+    // Disallow double-negation boolean casts in a boolean
     // context
     "no-extra-boolean-cast": "error",
 
@@ -63,53 +63,53 @@ export default {
     // Disallow unnecessary semicolons
     "no-extra-semi": "error",
 
-    // Disallow overwriting functions written as function 
+    // Disallow overwriting functions written as function
     // declarations
     "no-func-assign": "error",
 
-    // Disallow function or variable declarations in nested 
+    // Disallow function or variable declarations in nested
     // blocks
     "no-inner-declarations": "error",
 
-    // Disallow invalid regular expression strings in the 
+    // Disallow invalid regular expression strings in the
     // RegExp constructor
     "no-invalid-regexp": "error",
 
-    // Disallow irregular whitespace outside of strings and 
+    // Disallow irregular whitespace outside of strings and
     // comments
     "no-irregular-whitespace": "error",
 
-    // Disallow the use of object properties of the global 
+    // Disallow the use of object properties of the global
     // object as functions
     "no-obj-calls": "error",
 
-    // Disallow multiple spaces in a regular expression 
+    // Disallow multiple spaces in a regular expression
     // literal
     'no-regex-spaces': 'error',
 
     // Disallow sparse arrays
     'no-sparse-arrays': 'error',
 
-    // Avoid code that looks like two expressions but is 
+    // Avoid code that looks like two expressions but is
     // actually one
     'no-unexpected-multiline': 'error',
 
-    // Disallow unreachable statements after a return, 
+    // Disallow unreachable statements after a return,
     // throw, continue, or break statement
     'no-unreachable': 'error',
 
-    // Disallow return/throw/break/continue inside finally 
+    // Disallow return/throw/break/continue inside finally
     // blocks
     'no-unsafe-finally': 'error',
 
-    // Disallow negating the left operand of relational 
+    // Disallow negating the left operand of relational
     // operators
     'no-unsafe-negation': 'error',
 
     // Disallow comparisons with the value NaN
     'use-isnan': 'error',
 
-    // Ensure that the results of typeof are compared 
+    // Ensure that the results of typeof are compared
     // against a valid string
     'valid-typeof': 'error'
 

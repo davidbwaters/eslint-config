@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-  extends: './index.mjs'
+  extends: './index.js'
 }

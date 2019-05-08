@@ -2,8 +2,8 @@
  *  ESLint config to support ES6 language features.
  */
 
-export default {
-  extends: './ruleset.mjs',
+module.exports = {
+  extends: './ruleset.js',
   env: {
     es6: true
   },

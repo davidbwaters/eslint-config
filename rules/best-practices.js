@@ -118,7 +118,7 @@ module.exports = {
     'no-useless-escape': 'error',
 
     // Require or disallow Yoda conditions
-    yoda: 'error'
+    'yoda': 'error'
 
   }
 

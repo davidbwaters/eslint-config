@@ -7,19 +7,19 @@ module.exports = {
   'rules': {
 
     // Enforce return after a callback
-    'callback-return': 'warning',
+    'callback-return': 'warn',
 
     // Enforces error handling in callbacks (node
     // environment)
-    'handle-callback-err': 'warning',
+    'handle-callback-err': 'warn',
 
     // Disallow mixing regular variable and require
     // declarations
-    'no-mixed-requires': ['warning', false],
+    'no-mixed-requires': ['warn', false],
 
     // Disallow use of new operator with the require
     // function
-    'no-new-require': 'warning'
+    'no-new-require': 'warn'
 
   }
 

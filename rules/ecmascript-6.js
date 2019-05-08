@@ -8,11 +8,11 @@ module.exports = {
   'rules': {
 
     // Require parens in arrow function arguments
-    'arrow-parens': ['warning', 'as-needed'],
+    'arrow-parens': ['warn', 'as-needed'],
 
     // Require space before/after arrow function's arrow
     'arrow-spacing': [
-      'warning',
+      'warn',
       { before: true, after: true }
     ],
 
@@ -39,18 +39,18 @@ module.exports = {
     'no-this-before-super': 'error',
 
     // Require let or const instead of var
-    'no-var': 'warning',
+    'no-var': 'warn',
 
     // Require method and property shorthand syntax for
     // object literals
-    'object-shorthand': ['warning', 'always'],
+    'object-shorthand': ['warn', 'always'],
 
     // Suggest using of const declaration for variables that
     // are never modified after declared
-    'prefer-const': 'warning',
+    'prefer-const': 'warn',
 
     // Suggest using the spread operator instead of .apply()
-    'prefer-spread': 'warning',
+    'prefer-spread': 'warn',
 
     // Disallow generator functions that do not have yield
     'require-yield': 'error'

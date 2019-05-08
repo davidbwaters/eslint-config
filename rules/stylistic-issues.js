@@ -9,7 +9,7 @@ module.exports = {
 
     // Enforce line breaks after opening and before closing
     // array brackets
-    'array-bracket-spacing': ['error', 'always', {}],
+    'array-bracket-spacing': ['error', 'never', {}],
 
     // Enforce one true brace style
     'brace-style': ['error', 'stroustrup', {}],
@@ -21,14 +21,14 @@ module.exports = {
     'comma-spacing': ['error', { 'after': true }],
 
     // Enforce one true comma style
-    'comma-style': ['error', 'after'],
+    'comma-style': ['error', 'last'],
 
     // Disallow padding inside computed properties
     'computed-property-spacing': ['error', 'never'],
 
     // Enforces consistent naming when capturing the current
     // execution context
-    'consistent-this': ['error', ''self''],
+    'consistent-this': ['error', '"self"'],
 
     // Enforce newline at the end of file, with no multiple
     // empty lines
@@ -39,7 +39,7 @@ module.exports = {
 
     // Enforces spacing between keys and values in object
     // literal properties
-    'key-spacing': ['error', { 'align': 'colon', 'afterColon': true }],
+    'key-spacing': ['error', { 'afterColon': true }],
 
     // Require a space before & after certain keywords
     'keyword-spacing': ['error', { 'before': true, 'after': true }],
@@ -76,13 +76,13 @@ module.exports = {
     'no-new-object': 'error',
 
     // Disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': 'warning',
+    'no-trailing-spaces': 'warn',
 
     // Disallow the use of Boolean literals in conditional expressions
-    'no-unneeded-ternary': 'warning',
+    'no-unneeded-ternary': 'warn',
 
     // Require padding inside curly braces
-    'object-curly-spacing': ['warning', 'always', {
+    'object-curly-spacing': ['warn', 'always', {
       'arraysInObjects': true,
       'objectsInObjects': true
     }],
@@ -92,13 +92,13 @@ module.exports = {
     'operator-assignment': ['error', 'always'],
 
     // Requires operator at the beginning of the line in multiline statements
-    'operator-linebreak': ['warning', 'after'],
+    'operator-linebreak': ['warn', 'after'],
 
     // Disallow padding within blocks
     'padded-blocks': ['error', 'always'],
 
     // Require or disallow padding lines between statements
-    'padding-line-between-statements': ['warning', {
+    'padding-line-between-statements': ['warn', {
       blankLine: 'always',
       prev: '*', next: 'return'
     }, {
@@ -114,28 +114,27 @@ module.exports = {
     'semi': ['error', 'never'],
 
     // Require or disallow space before blocks
-    'space-before-blocks': ['warning', 'always'],
+    'space-before-blocks': ['warn', 'always'],
 
     // Require or disallow space before function opening parenthesis
     'space-before-function-paren': ['error', 'never'],
 
     // Require or disallow spaces inside parentheses
-    'space-in-parens': ['warning', 'always', {
-      "exceptions": ['"{}"', '" []"', '" ()"', ' "empty"']
-    }
-    ],
+    'space-in-parens': ['warn', 'always', {
+      'exceptions': ['{}', '[]', '()', 'empty']
+    }],
 
     // Require spaces around operators
-    'space-infix-ops': ['warning', { 'int32Hint': true }],
+    'space-infix-ops': ['warn', { 'int32Hint': true }],
 
     // Require or disallow spaces before/after unary operators
-    'space-unary-ops': ['warning', { 'words': true, 'nonwords': true }],
+    'space-unary-ops': ['warn', { 'words': true, 'nonwords': true }],
 
     // Require or disallow a space immediately following the
     // // or /* in a comment
-    'spaced-comment': ['warning', 'always', {
-      'exceptions': '',
-      'markers': ['"*"']
+    'spaced-comment': ['warn', 'always', {
+      'exceptions': [],
+      'markers': ['*']
     }]
 
   }

@@ -4,11 +4,11 @@
 
 module.exports = {
   extends: [
-    '../rules/possible-errors.js',
-    '../rules/best-practices.js',
-    '../rules/variables.js',
-    '../rules/node-and-commonjs.js',
-    '../rules/stylistic-issues.js',
-    '../rules/ecmascript-6.js'
+    '../rules/eslint/possible-errors.js',
+    '../rules/eslint/best-practices.js',
+    '../rules/eslint/variables.js',
+    '../rules/eslint/node-and-commonjs.js',
+    '../rules/eslint/stylistic-issues.js',
+    '../rules/eslint/ecmascript-6.js'
   ]
 }

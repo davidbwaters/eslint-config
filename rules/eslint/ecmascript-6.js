@@ -4,56 +4,64 @@
  */
 
 module.exports = {
-
   'rules': {
 
-    // Require parens in arrow function arguments
-    'arrow-parens': ['warn', 'as-needed'],
+    // Enforce consistent spacing before and after the arrow
+    // in arrow functions (fixable)
+    'arrow-spacing': ['error', {
+      'before': true,
+      'after': true
+    }],
 
-    // Require space before/after arrow function's arrow
-    'arrow-spacing': [
-      'warn',
-      { before: true, after: true }
-    ],
-
-    // Verify super() callings in constructors
+    // Require 'super()' calls in constructors (recommended)
     'constructor-super': 'error',
 
-    // Enforce the spacing around the * in generator functions
-    'generator-star-spacing': ['error', 'both'],
+    // Enforce consistent spacing around '*' operators in
+    // generator functions (fixable)
+    'generator-star-spacing': ['error', {
+      'before': true,
+      'after': true
+    }],
 
-    // Disallow modifying variables of class declarations
+    // Disallow reassigning class members (recommended)
     'no-class-assign': 'error',
 
-    // Disallow modifying variables that are declared using const
+    // Disallow reassigning 'const' variables (recommended)
     'no-const-assign': 'error',
 
-    // Disallow duplicate class members
+    // Disallow duplicate class members (recommended)
     'no-dupe-class-members': 'error',
 
-    // Disallow symbol constructor
+    // Disallow 'new' operators with the 'Symbol' object
+    // (recommended)
     'no-new-symbol': 'error',
 
-    // Disallow to use this/super before super() calling in
-    // constructors.
+    // Disallow 'this'/'super' before calling 'super()' in
+    // constructors (recommended)
     'no-this-before-super': 'error',
 
-    // Require let or const instead of var
-    'no-var': 'warn',
+    // Disallow unnecessary computed property keys in object
+    // literals
+    'no-useless-computed-key': 'error',
 
-    // Require method and property shorthand syntax for
-    // object literals
-    'object-shorthand': ['warn', 'always'],
+    // Disallow unnecessary constructors
+    'no-useless-constructor': 'error',
 
-    // Suggest using of const declaration for variables that
-    // are never modified after declared
-    'prefer-const': 'warn',
+    // Disallow renaming import, export, and destructured
+    // assignments to the same name (fixable)
+    'no-useless-rename': 'error',
 
-    // Suggest using the spread operator instead of .apply()
-    'prefer-spread': 'warn',
+    // Enforce spacing between rest and spread operators and
+    // their expressions (fixable)
+    'rest-spread-spacing': ['error', 'never'],
 
-    // Disallow generator functions that do not have yield
-    'require-yield': 'error'
+    // Require or disallow spacing around embedded
+    // expressions of template strings (fixable)
+    'template-curly-spacing': ['error', 'never'],
+
+    // Require or disallow spacing around the '*' in
+    // 'yield*' expressions (fixable)
+    'yield-star-spacing': ['error', 'both']
+
   }
-
 }

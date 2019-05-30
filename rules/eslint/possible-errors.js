@@ -16,6 +16,13 @@ module.exports = {
     // property getters
     'getter-return': 'error',
 
+    // Disallow using an async function as a Promise
+    // executor
+    'no-async-promise-executor': 'error',
+
+    // Disallow await inside of loops
+    // 'no-await-in-loop': 'error',
+
     // Disallow comparisons to negative zero
     'no-compare-neg-zero': 'error',
 
@@ -23,10 +30,10 @@ module.exports = {
     'no-cond-assign': 'error',
 
     // Disallow use of console
-    'no-console': 'warn',
+    // 'no-console': 'error',
 
     // Disallow use of constant expressions in conditions
-    'no-constant-condition': 'warn',
+    'no-constant-condition': ['error', { 'checkLoops': false }],
 
     // Disallow control characters in regular expressions
     'no-control-regex': 'error',
@@ -58,7 +65,7 @@ module.exports = {
     'no-extra-boolean-cast': 'error',
 
     // Disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all'],
+    'no-extra-parens': ['error', 'functions'],
 
     // Disallow unnecessary semicolons
     'no-extra-semi': 'error',
@@ -69,7 +76,7 @@ module.exports = {
 
     // Disallow function or variable declarations in nested
     // blocks
-    'no-inner-declarations': 'error',
+    'no-inner-declarations': ['error', 'functions'],
 
     // Disallow invalid regular expression strings in the
     // RegExp constructor
@@ -79,9 +86,17 @@ module.exports = {
     // comments
     'no-irregular-whitespace': 'error',
 
+    // Disallow characters which are made with multiple code
+    // points in character class syntax
+    'no-misleading-character-class': 'error',
+
     // Disallow the use of object properties of the global
     // object as functions
     'no-obj-calls': 'error',
+
+    // Disallow calling some Object.prototype methods
+    // directly on objects
+    'no-prototype-builtins': 'error',
 
     // Disallow multiple spaces in a regular expression
     // literal
@@ -89,6 +104,10 @@ module.exports = {
 
     // Disallow sparse arrays
     'no-sparse-arrays': 'error',
+
+    // Disallow template literal placeholder syntax in
+    // regular strings
+    'no-template-curly-in-string': 'error',
 
     // Avoid code that looks like two expressions but is
     // actually one
@@ -106,12 +125,18 @@ module.exports = {
     // operators
     'no-unsafe-negation': 'error',
 
+    // Disallow assignments that can lead to race conditions
+    // due to usage of await or yield
+    'require-atomic-updates': 'error',
+
     // Disallow comparisons with the value NaN
     'use-isnan': 'error',
 
     // Ensure that the results of typeof are compared
     // against a valid string
-    'valid-typeof': 'error'
+    'valid-typeof': ['error', {
+      'requireStringLiterals': true
+    }]
 
   }
 

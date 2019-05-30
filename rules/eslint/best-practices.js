@@ -3,123 +3,140 @@
  */
 
 module.exports = {
-
   'rules': {
 
-    // Enforces getter/setter pairs in objects
-    'accessor-pairs': 'off',
+    // Enforce getter and setter pairs in objects
+    'accessor-pairs': 'error',
 
-    // Treat var statements as if they were block scoped
-    'block-scoped-var': 'error',
+    // Enforce consistent brace style for all control
+    // statements (fixable)
+    'curly': ['error', 'multi-line'],
 
-    // Require return statements to either always or never
-    // specify values
-    'consistent-return': 'error',
+    // Enforce consistent newlines before and after dots
+    // (fixable)
+    'dot-location': ['error', 'property'],
 
-    // Specify curly brace conventions for all control
-    // statements
-    'curly': ['error', 'all'],
+    // Require the use of '===' and '!==' (fixable)
+    'eqeqeq': 'error',
 
-    // Require default case in switch statements
-    'default-case': 'error',
+    // Disallow the use of 'arguments.caller' or
+    // 'arguments.callee'
+    'no-caller': 'error',
 
-    // Encourages use of dot notation whenever possible
-    'dot-notation': 'error',
-
-    // Enforces consistent newlines before or after dots
-    'dot-location': ['error', 'object'],
-
-    // Require the use of === and !==
-    'eqeqeq': ['error', 'smart'],
-
-    // Make sure for-in loops have an if statement
-    'guard-for-in': 'error',
-
-    // Disallow lexical declarations in case/default clauses
+    // Disallow lexical declarations in case clauses
+    // (recommended)
     'no-case-declarations': 'error',
 
-    // Disallow division operators explicitly at beginning
-    // of regular expression
-    'no-div-regex': 'error',
-
-    // Disallow else after a return in an if
-    'no-else-return': 'error',
-
-    // Disallow empty destructuring patterns
+    // Disallow empty destructuring patterns (recommended)
     'no-empty-pattern': 'error',
 
-    // Disallow comparisons to null without a type-checking
-    // operator
-    'no-eq-null': 'error',
+    // Disallow extending native types
+    'no-extend-native': 'off',
 
-    // Disallow unnecessary function binding
-    'no-extra-bind': 'error',
+    // Disallow unnecessary calls to '.bind()' (fixable)
+    'no-extra-bind': 'off',
 
-    // Disallow fallthrough of case statements
+    // Disallow fallthrough of 'case' statements
+    // (recommended)
     'no-fallthrough': 'error',
 
-    // Disallow the use of leading or trailing decimal
-    // points in numeric literals
+    // Disallow leading or trailing decimal points in
+    // numeric literals (fixable)
     'no-floating-decimal': 'error',
 
-    // Disallow reassignments of native objects or read-only
-    // globals
-    'no-global-assign': 'error',
+    // Disallow assignments to native objects or read-only
+    // global variables (recommended)
+    'no-global-assign': 'off',
 
-    // Disallow use of labels for anything other then loops
-    // and switches
+    // Disallow the use of 'eval()'-like methods
+    'no-implied-eval': 'error',
+
+    // Disallow the use of the '__iterator__' property
+    'no-iterator': 'error',
+
+    // Disallow labeled statements
     'no-labels': 'error',
 
     // Disallow unnecessary nested blocks
     'no-lone-blocks': 'error',
 
-    // Disallow creation of functions within loops
-    'no-loop-func': 'error',
+    // Disallow multiple spaces (fixable)
+    'no-multi-spaces': 'error',
 
-    // Disallow use of multiline strings
+    // Disallow multiline strings
     'no-multi-str': 'error',
 
-    // Disallow use of new operator when not part of the
-    // assignment or comparison
+    // Disallow 'new' operators outside of assignments or
+    // comparisons
     'no-new': 'error',
 
-    // Disallow use of new operator for Function object
+    // Disallow 'new' operators with the 'Function' object
     'no-new-func': 'error',
 
-    // Disallows creating new instances of String, Number,
-    // and Boolean
+    // Disallow 'new' operators with the 'String', 'Number',
+    // and 'Boolean' objects
     'no-new-wrappers': 'error',
 
-    // Disallow use of (old style) octal literals
+    // Disallow octal literals (recommended)
     'no-octal': 'error',
 
-    // Disallow reassignment of function parameters
-    'no-param-reassign': ['error', { 'props': true }],
+    // Disallow octal escape sequences in string literals
+    'no-octal-escape': 'error',
 
-    // Disallow declaring the same variable more then once
+    // Disallow the use of the '__proto__' property
+    'no-proto': 'error',
+
+    // Disallow 'var' redeclaration (recommended)
     'no-redeclare': 'error',
 
-    // Disallow use of assignment in return statement
-    'no-return-assign': ['error', 'always'],
+    // Disallow assignment operators in 'return' statements
+    'no-return-assign': 'error',
 
-    // Disallow self assignment
+    // Disallow assignments where both sides are exactly the
+    // same (recommended)
     'no-self-assign': 'error',
 
-    // Disallow self assignment
+    // Disallow comparisons where both sides are exactly the
+    // same
     'no-self-compare': 'error',
 
-    // Disallow unused labels
+    // Disallow comma operators
+    'no-sequences': 'error',
+
+    // Disallow throwing literals as exceptions
+    'no-throw-literal': 'error',
+
+    // Disallow unmodified loop conditions
+    'no-unmodified-loop-condition': 'error',
+
+    // Disallow unused expressions
+    'no-unused-expressions': ['error', {
+      'allowShortCircuit': true,
+      'allowTernary': true,
+      'allowTaggedTemplates': true
+    }],
+
+    // Disallow unused labels (recommended, fixable)
     'no-unused-labels': 'error',
 
-    // Disallow unnecessary .call() and .apply()
+    // Disallow unnecessary calls to '.call()' and
+    // '.apply()'
     'no-useless-call': 'error',
 
-    // Disallow unnecessary catch clauses
+    // Disallow unnecessary escape characters (recommended)
     'no-useless-escape': 'error',
 
-    // Require or disallow Yoda conditions
-    'yoda': 'error'
+    // Disallow with statements (recommended)
+    'no-with': 'error',
+
+    // Require parentheses around immediate 'function'
+    // invocations (fixable)
+    'wrap-iife': ['error', 'any', {
+      'functionPrototypeMethods': true
+    }],
+
+    // Require or disallow 'Yoda' conditions (fixable)
+    'yoda': ['error', 'never']
 
   }
-
 }

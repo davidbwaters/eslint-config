@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-  extends: './configs/modern.js'
+  extends: './config/base.js'
 }

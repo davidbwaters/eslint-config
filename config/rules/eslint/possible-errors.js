@@ -1,7 +1,5 @@
 /**
  *  ESLint settings for rules pertaining to possible errors.
- *
- *  http://eslint.org/docs/rules/#possible-errors
  */
 
 module.exports = {

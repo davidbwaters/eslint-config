@@ -1,11 +1,14 @@
 /**
- *  ESLint config to support ES6 language features.
+ *  ESLint config to support ES6 features in modern browsers
+ *  and Node.js.
  */
 
 module.exports = {
   extends: './ruleset.js',
   env: {
-    es6: true
+    browser: true,
+    es6: true,
+    node: true
   },
   parserOptions: {
     'ecmaVersion': 6,

@@ -66,7 +66,7 @@ module.exports = {
 
     // Enforce consistent spacing before and after keywords
     // (fixable)
-    'keyword-spacing':  ['error', {
+    'keyword-spacing': ['error', {
       'before': true,
       'after': true
     }],

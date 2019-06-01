@@ -11,7 +11,7 @@ module.exports = {
     'block-spacing': ['error', 'always'],
 
     // Enforce consistent brace style for blocks (fixable)
-    'brace-style': [ 'error', '1tbs', {
+    'brace-style': [ 'error', 'stroustrup', {
       'allowSingleLine': true
     }],
 
@@ -101,8 +101,9 @@ module.exports = {
 
     // Disallow multiple empty lines (fixable)
     'no-multiple-empty-lines': ['error', {
-      'max': 1,
-      'maxEOF': 0
+      'max': 2,
+      'maxEOF': 1,
+      'maxBOF': 1
     }],
 
     // Disallow 'Object' constructors

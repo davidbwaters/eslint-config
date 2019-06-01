@@ -21,7 +21,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/eslint ./test/test.js"
+    "test": "node test/test.js"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

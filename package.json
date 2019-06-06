@@ -1,8 +1,7 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "ESLint config with preferred rules and tweaks.",
-
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
   "license": "MIT",

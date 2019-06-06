@@ -139,9 +139,11 @@ module.exports = {
 
     // Require or disallow padding within blocks (fixable)
     'padded-blocks': ['error', {
-      'blocks': 'never',
-      'switches': 'never',
-      'classes': 'never'
+      'blocks': 'always',
+      'switches': 'always',
+      'classes': 'always'
+    }, {
+      'allowSingleLineBlocks': true
     }],
 
     // Enforce the consistent use of either backticks,

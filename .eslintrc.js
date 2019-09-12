@@ -1,5 +1,5 @@
 /**
- *  Default ESLint Config
+ *  ESLint Config
  */
 
 module.exports = {

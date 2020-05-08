@@ -190,7 +190,10 @@ module.exports = {
     'spaced-comment': ['error', 'always', {
       'line': {
         'markers': [
-          '*package', '!', '/', ',', '='
+          '*package', '!', '/', ',', '=', '*'
+        ],
+        'exceptions': [
+          '*'
         ]
       },
       'block': {

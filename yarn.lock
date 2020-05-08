@@ -18,6 +18,16 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@davidbwaters/eslint-config@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@davidbwaters/eslint-config/-/eslint-config-1.5.0.tgz#8f154a519dfc29f04a26e5ebbb4269e992d0a8e4"
+  integrity sha512-ODzRsn/VUqgYHhL+ZF62cM+jZCgsGGGhTAp4V5lQhb8svwJ4rrc8sbZdocIyZJZBq8om/ElGRXgIYyb2wqNB6Q==
+
+"@davidbwaters/prettier-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@davidbwaters/prettier-config/-/prettier-config-1.1.1.tgz#7f936f350af9a247718bab42c63526bd3b891126"
+  integrity sha512-qFuJv+TtFsKk0Q1MO+AsJjQZrIuZYUM2H0GN36da75UxDhpkgYfoJhBhplR5MqMmRSOdSEU++PGZL8ElyLIRLA==
+
 acorn-jsx@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.2.tgz#84b68ea44b373c4f8686023a551f61a21b7c4a4f"

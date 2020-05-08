@@ -187,7 +187,7 @@ module.exports = {
 
     // Enforce consistent spacing after the '//' or '/*' in
     // a comment (fixable)
-    'spaced-comment': ['error', 'never'],
+    'spaced-comment': off,
 
     // Require or disallow the Unicode BOM (fixable)
     'unicode-bom': ['error', 'never']

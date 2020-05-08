@@ -187,23 +187,7 @@ module.exports = {
 
     // Enforce consistent spacing after the '//' or '/*' in
     // a comment (fixable)
-    'spaced-comment': ['error', 'always', {
-      'line': {
-        'markers': [
-          '*package', '!', '/', ',', '=', '*'
-        ],
-        'exceptions': [
-          '*'
-        ]
-      },
-      'block': {
-        'balanced': true,
-        'markers': [
-          '*package', '!', ',', ':', '::', 'flow-include'
-        ],
-        'exceptions': ['*']
-      }
-    }],
+    'spaced-comment': ['error', 'never'],
 
     // Require or disallow the Unicode BOM (fixable)
     'unicode-bom': ['error', 'never']

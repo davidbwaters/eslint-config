@@ -19,7 +19,7 @@ module.exports = {
     ],
 
     // Enforce camelcase naming convention
-    camelcase: ['error', {properties: 'never'}],
+    camelcase: ['error', { properties: 'never' }],
 
     // Require or disallow trailing commas (fixable)
     'comma-dangle': [
@@ -59,9 +59,9 @@ module.exports = {
         VariableDeclarator: 1,
         outerIIFEBody: 1,
         MemberExpression: 1,
-        FunctionDeclaration: {parameters: 1, body: 1},
-        FunctionExpression: {parameters: 1, body: 1},
-        CallExpression: {arguments: 1},
+        FunctionDeclaration: { parameters: 1, body: 1 },
+        FunctionExpression: { parameters: 1, body: 1 },
+        CallExpression: { arguments: 1 },
         ArrayExpression: 1,
         ObjectExpression: 1,
         ImportDeclaration: 1,
@@ -180,7 +180,7 @@ module.exports = {
       'error',
       'after',
       {
-        overrides: {'?': 'before', ':': 'before'},
+        overrides: { '?': 'before', ':': 'before' },
       },
     ],
 
@@ -227,7 +227,7 @@ module.exports = {
 
     // Enforce consistent spacing before 'function'
     // definition opening parenthesis (fixable)
-    'space-before-function-paren': ['error', 'always'],
+    'space-before-function-paren': ['error', 'never'],
 
     // Enforce consistent spacing inside parentheses
     // (fixable)

@@ -14,8 +14,8 @@ module.exports = {
       'error',
       'stroustrup',
       {
-        allowSingleLine: true,
-      },
+        allowSingleLine: true
+      }
     ],
 
     // Enforce camelcase naming convention
@@ -29,8 +29,8 @@ module.exports = {
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never',
-      },
+        functions: 'never'
+      }
     ],
 
     // Enforce consistent spacing before and after commas
@@ -39,8 +39,8 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true,
-      },
+        after: true
+      }
     ],
 
     // Enforce consistent comma style (fixable)
@@ -67,7 +67,8 @@ module.exports = {
         ImportDeclaration: 1,
         flatTernaryExpressions: false,
         ignoreComments: false,
-      },
+        ignoredNodes: ['TemplateLiteral *']
+      }
     ],
 
     // Enforce consistent spacing between keys and values in
@@ -76,8 +77,8 @@ module.exports = {
       'error',
       {
         beforeColon: false,
-        afterColon: true,
-      },
+        afterColon: true
+      }
     ],
 
     // Enforce consistent spacing before and after keywords
@@ -86,8 +87,8 @@ module.exports = {
       'error',
       {
         before: true,
-        after: true,
-      },
+        after: true
+      }
     ],
 
     // Enforce a maximum line length
@@ -95,8 +96,8 @@ module.exports = {
       'error',
       {
         code: 60,
-        tabWidth: 4,
-      },
+        tabWidth: 4
+      }
     ],
 
     // Require constructor 'function' names to begin with a
@@ -105,8 +106,8 @@ module.exports = {
       'error',
       {
         newIsCap: true,
-        capIsNew: false,
-      },
+        capIsNew: false
+      }
     ],
 
     // Require parentheses when invoking a constructor with
@@ -123,10 +124,10 @@ module.exports = {
         groups: [
           ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
-          ['in', 'instanceof'],
+          ['in', 'instanceof']
         ],
-        allowSamePrecedence: true,
-      },
+        allowSamePrecedence: true
+      }
     ],
 
     // Disallow mixed spaces and tabs for indentation
@@ -139,8 +140,8 @@ module.exports = {
       {
         max: 2,
         maxEOF: 1,
-        maxBOF: 1,
-      },
+        maxBOF: 1
+      }
     ],
 
     // Disallow 'Object' constructors
@@ -161,8 +162,8 @@ module.exports = {
     'object-property-newline': [
       'error',
       {
-        allowMultiplePropertiesPerLine: true,
-      },
+        allowMultiplePropertiesPerLine: true
+      }
     ],
 
     // Enforce variables to be declared either together or
@@ -170,8 +171,8 @@ module.exports = {
     'one-var': [
       'error',
       {
-        initialized: 'never',
-      },
+        initialized: 'never'
+      }
     ],
 
     // Enforce consistent linebreak style for operators
@@ -180,8 +181,8 @@ module.exports = {
       'error',
       'after',
       {
-        overrides: { '?': 'before', ':': 'before' },
-      },
+        overrides: { '?': 'before', ':': 'before' }
+      }
     ],
 
     // Require or disallow padding within blocks (fixable)
@@ -190,11 +191,11 @@ module.exports = {
       {
         blocks: 'always',
         switches: 'always',
-        classes: 'always',
+        classes: 'always'
       },
       {
-        allowSingleLineBlocks: true,
-      },
+        allowSingleLineBlocks: true
+      }
     ],
 
     // Enforce the consistent use of either backticks,
@@ -204,8 +205,8 @@ module.exports = {
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+        allowTemplateLiterals: true
+      }
     ],
 
     // Require or disallow semicolons instead of ASI
@@ -218,8 +219,8 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true,
-      },
+        after: true
+      }
     ],
 
     // Enforce consistent spacing before blocks (fixable)
@@ -242,8 +243,8 @@ module.exports = {
       'error',
       {
         words: true,
-        nonwords: false,
-      },
+        nonwords: false
+      }
     ],
 
     // Enforce consistent spacing after the '//' or '/*' in
@@ -251,6 +252,6 @@ module.exports = {
     'spaced-comment': 'off',
 
     // Require or disallow the Unicode BOM (fixable)
-    'unicode-bom': ['error', 'never'],
-  },
-};
+    'unicode-bom': ['error', 'never']
+  }
+}

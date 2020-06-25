@@ -3,5 +3,8 @@
  */
 
 module.exports = {
+  plugins: [
+    'import'
+  ],
   extends: './config/base.js'
 }

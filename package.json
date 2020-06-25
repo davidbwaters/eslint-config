@@ -1,34 +1,22 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "ESLint config with preferred rules and tweaks.",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
   "license": "MIT",
   "private": false,
-  "keywords": [
-    "code checker",
-    "code linter",
-    "code standards",
-    "code style",
-    "eslint-config",
-    "eslint",
-    "eslintconfig",
-    "lint",
-    "style checker",
-    "style linter"
-  ],
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "deploy": "yarn publish && git commit -a -m .; git push"
+  },
+  "dependencies": {
+    "@davidbwaters/prettier-config": "^1.1.1",
+    "eslint-plugin-import": "^2.21.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1"
-  },
-  "dependencies": {
-    "@davidbwaters/eslint-config": "^1.5.0",
-    "@davidbwaters/prettier-config": "^1.1.1"
+    "prettier": "^2.0.5"
   }
 }

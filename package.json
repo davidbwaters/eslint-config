@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.6.8",
+  "version": "1.6.9",
   "description": "ESLint config with preferred rules and tweaks.",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js",
-    "deploy": "yarn publish && git commit -a -m .; git push"
+    "deploy": "yarn publish && git add -A && git commit -m .; git push"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.21.2"

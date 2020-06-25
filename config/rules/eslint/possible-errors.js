@@ -31,7 +31,9 @@ module.exports = {
     // 'no-console': 'error',
 
     // Disallow use of constant expressions in conditions
-    'no-constant-condition': ['error', { 'checkLoops': false }],
+    'no-constant-condition': ['error', {
+      'checkLoops': false
+    }],
 
     // Disallow control characters in regular expressions
     'no-control-regex': 'error',

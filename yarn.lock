@@ -19,9 +19,9 @@
     js-tokens "^4.0.0"
 
 "@davidbwaters/prettier-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@davidbwaters/prettier-config/-/prettier-config-1.1.1.tgz#7f936f350af9a247718bab42c63526bd3b891126"
-  integrity sha512-qFuJv+TtFsKk0Q1MO+AsJjQZrIuZYUM2H0GN36da75UxDhpkgYfoJhBhplR5MqMmRSOdSEU++PGZL8ElyLIRLA==
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@davidbwaters/prettier-config/-/prettier-config-1.1.6.tgz#ca056fb0e4173e5aa57a281a939ee9ed4999a180"
+  integrity sha512-qrP5MJ+otNHo944BVWMKb4wnI4P1IqttyGbgsS/OMDMvyWK9qNOUYQdiMqEktfiW5sViv0RtOUhzwIazZ7CH4Q==
 
 "@types/json5@^0.0.29":
   version "0.0.29"

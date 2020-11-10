@@ -9,16 +9,20 @@ module.exports = {
     './rules/eslint/variables.js',
     './rules/eslint/node-and-commonjs.js',
     './rules/eslint/stylistic-issues.js',
-    './rules/eslint/ecmascript-6.js'
+    './rules/eslint/ecmascript-6.js',
+    './rules/import.js'
   ],
   env: {
     'browser': true,
     'es6': true,
     'node': true
   },
+  globals: {},
   parserOptions: {
     'ecmaVersion': 2018,
     'sourceType': 'module'
   },
-  globals: {}
+  plugins: [
+    'import'
+  ]
 }

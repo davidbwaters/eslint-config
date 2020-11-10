@@ -1,5 +1,5 @@
 /**
- *  ESLint settings eslint-plugin-import
+ *  ESLint rules for eslint-plugin-import
  */
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
     'import/named': 'error',
     'import/default': 'error',
     'import/namespace': 'error',
-    'import/no-absolute-paths': 'error',
+    'import/no-absolute-path': 'error',
     'import/no-self-import': 'error',
     'import/no-cycle': 'error',
     'import/no-useless-path-segments': 'error',
@@ -33,5 +33,6 @@ module.exports = {
     'import/first': 'error',
     'import/exports-last': 'error',
     'import/no-duplicates': 'error'
+
   }
 }

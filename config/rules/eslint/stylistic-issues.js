@@ -96,7 +96,10 @@ module.exports = {
       'error',
       {
         code: 60,
-        tabWidth: 4
+        tabWidth: 2,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true
       }
     ],
 

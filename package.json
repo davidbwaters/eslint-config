@@ -9,12 +9,10 @@
   "main": "index.js",
   "devDependencies": {
     "@davidbwaters/prettier-config": "^1.1.1",
-    "eslint": "^7.13.0",
-    "eslint-plugin-import": "^2.22.1",
     "prettier": "^2.0.5"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^7.16.0",
     "eslint-plugin-import": "^2.21.2"
   },
   "scripts": {

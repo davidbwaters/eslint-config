@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "ESLint config with preferred rules and tweaks.",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",

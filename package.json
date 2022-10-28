@@ -7,10 +7,6 @@
   "license": "MIT",
   "private": false,
   "main": "index.js",
-  "devDependencies": {
-    "@davidbwaters/prettier-config": "^1.1.1",
-    "prettier": "^2.0.5"
-  },
   "peerDependencies": {
     "eslint": "^7.16.0",
     "eslint-plugin-import": "^2.21.2"

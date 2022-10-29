@@ -1,15 +1,17 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "ESLint config with preferred rules and tweaks.",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
   "license": "MIT",
   "private": false,
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "^7.16.0",
+  "dependencies": {
     "eslint-plugin-import": "^2.21.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.16.0"
   },
   "scripts": {
     "test": "node test/test.js",

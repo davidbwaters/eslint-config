@@ -4,7 +4,6 @@
 
 module.exports = {
   rules: {
-
     // Static analysis
     'import/no-unresolved': [
       'error',
@@ -33,6 +32,5 @@ module.exports = {
     'import/first': 'error',
     'import/exports-last': 'error',
     'import/no-duplicates': 'error'
-
   }
 }

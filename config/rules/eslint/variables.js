@@ -4,7 +4,6 @@
 
 module.exports = {
   rules: {
-
     // Disallow deleting variables (recommended)
     'no-delete-var': 'error',
 
@@ -22,18 +21,23 @@ module.exports = {
     'no-undef-init': 'error',
 
     // Disallow unused variables (recommended)
-    'no-unused-vars': ['error', {
-      'vars': 'all',
-      'args': 'none',
-      'ignoreRestSiblings': true
-    }],
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'none',
+        ignoreRestSiblings: true
+      }
+    ],
 
     // Disallow the use of variables before they are defined
-    'no-use-before-define': ['error', {
-      'functions': false,
-      'classes': false,
-      'variables': false
-    }]
-
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: false
+      }
+    ]
   }
 }

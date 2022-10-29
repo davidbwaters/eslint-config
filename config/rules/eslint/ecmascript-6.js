@@ -4,24 +4,29 @@
  */
 
 module.exports = {
-  'rules': {
-
+  rules: {
     // Enforce consistent spacing before and after the arrow
     // in arrow functions (fixable)
-    'arrow-spacing': ['error', {
-      'before': true,
-      'after': true
-    }],
+    'arrow-spacing': [
+      'error',
+      {
+        before: true,
+        after: true
+      }
+    ],
 
     // Require 'super()' calls in constructors (recommended)
     'constructor-super': 'error',
 
     // Enforce consistent spacing around '*' operators in
     // generator functions (fixable)
-    'generator-star-spacing': ['error', {
-      'before': true,
-      'after': true
-    }],
+    'generator-star-spacing': [
+      'error',
+      {
+        before: true,
+        after: true
+      }
+    ],
 
     // Disallow reassigning class members (recommended)
     'no-class-assign': 'error',
@@ -62,6 +67,5 @@ module.exports = {
     // Require or disallow spacing around the '*' in
     // 'yield*' expressions (fixable)
     'yield-star-spacing': ['error', 'both']
-
   }
 }

@@ -3,9 +3,7 @@
  */
 
 module.exports = {
-
-  'rules': {
-
+  rules: {
     // Enforce “for” loop update clause moving the counter
     // in the right direction
     'for-direction': 'error',
@@ -31,9 +29,12 @@ module.exports = {
     // 'no-console': 'error',
 
     // Disallow use of constant expressions in conditions
-    'no-constant-condition': ['error', {
-      'checkLoops': false
-    }],
+    'no-constant-condition': [
+      'error',
+      {
+        checkLoops: false
+      }
+    ],
 
     // Disallow control characters in regular expressions
     'no-control-regex': 'error',
@@ -134,10 +135,11 @@ module.exports = {
 
     // Ensure that the results of typeof are compared
     // against a valid string
-    'valid-typeof': ['error', {
-      'requireStringLiterals': true
-    }]
-
+    'valid-typeof': [
+      'error',
+      {
+        requireStringLiterals: true
+      }
+    ]
   }
-
 }

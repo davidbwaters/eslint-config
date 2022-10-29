@@ -13,16 +13,14 @@ module.exports = {
     './rules/import.js'
   ],
   env: {
-    'browser': true,
-    'es6': true,
-    'node': true
+    browser: true,
+    es6: true,
+    node: true
   },
   globals: {},
   parserOptions: {
-    'ecmaVersion': 2018,
-    'sourceType': 'module'
+    ecmaVersion: 2018,
+    sourceType: 'module'
   },
-  plugins: [
-    'import'
-  ]
+  plugins: ['import']
 }

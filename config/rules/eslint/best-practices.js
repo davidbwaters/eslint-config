@@ -3,21 +3,20 @@
  */
 
 module.exports = {
-  'rules': {
-
+  rules: {
     // Enforce getter and setter pairs in objects
     'accessor-pairs': 'error',
 
     // Enforce consistent brace style for all control
     // statements (fixable)
-    'curly': ['error', 'multi-line'],
+    curly: ['error', 'multi-line'],
 
     // Enforce consistent newlines before and after dots
     // (fixable)
     'dot-location': ['error', 'property'],
 
     // Require the use of '===' and '!==' (fixable)
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
 
     // Disallow the use of 'arguments.caller' or
     // 'arguments.callee'
@@ -110,11 +109,14 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
 
     // Disallow unused expressions
-    'no-unused-expressions': ['error', {
-      'allowShortCircuit': true,
-      'allowTernary': true,
-      'allowTaggedTemplates': true
-    }],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true
+      }
+    ],
 
     // Disallow unused labels (recommended, fixable)
     'no-unused-labels': 'error',
@@ -131,12 +133,15 @@ module.exports = {
 
     // Require parentheses around immediate 'function'
     // invocations (fixable)
-    'wrap-iife': ['error', 'any', {
-      'functionPrototypeMethods': true
-    }],
+    'wrap-iife': [
+      'error',
+      'any',
+      {
+        functionPrototypeMethods: true
+      }
+    ],
 
     // Require or disallow 'Yoda' conditions (fixable)
-    'yoda': ['error', 'never']
-
+    yoda: ['error', 'never']
   }
 }

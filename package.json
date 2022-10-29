@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/eslint-config",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "description": "ESLint config with preferred rules and tweaks.",
   "repository": "http://github.com/davidbwaters/eslint-config",
   "author": "David B. Waters",
@@ -10,6 +10,11 @@
   "dependencies": {
     "eslint-plugin-import": "^2.21.2"
   },
+  "devDependencies": {
+    "@davidbwaters/prettier-config": "^1.2.6",
+    "eslint": "^7.16.0",
+    "prettier": "^2.7.1"
+  },
   "peerDependencies": {
     "eslint": "^7.16.0"
   },
@@ -17,6 +22,7 @@
     "test": "node test/test.js",
     "deploy": "yarn deploy:npm && yarn deploy:git",
     "deploy:npm": "yarn publish --patch",
-    "deploy:git": "git add -A && git commit -m .; git push"
+    "deploy:git": "git add -A && git commit -m .; git push",
+    "format": "yarn prettier -w ./config/**/* && yarn eslint ./config/**/* --fix"
   }
 }
